@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1591215275 source:c:\users\main\desktop\rip vieux disque dur\codeblocks\codeblocks-17.12mingw-nosetup\programmes\brainfuckint\main.c
+	<stdio.h>
+	<stdlib.h>
+	"brainfuck.h"
+
+1591215792 c:\users\main\desktop\rip vieux disque dur\codeblocks\codeblocks-17.12mingw-nosetup\programmes\brainfuckint\brainfuck.h
+	<stdbool.h>
+
+1591215037 source:c:\users\main\desktop\rip vieux disque dur\codeblocks\codeblocks-17.12mingw-nosetup\programmes\brainfuckint\brainfuck.c
+	<stdbool.h>
+	<stdlib.h>
+	<stdio.h>
+	"brainfuck.h"
+
