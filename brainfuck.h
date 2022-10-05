@@ -2,6 +2,7 @@
 #define BRAINFUCK
 
 #include <stdbool.h>
+#include <stdlib.h>
 
 typedef unsigned char byte;
 
@@ -11,7 +12,7 @@ typedef unsigned char byte;
 
 byte * allocateBFMem();
 
-inline void
+static inline void
 cleanUpBFMem(byte* BFMem)
 {
     free(BFMem);
@@ -34,6 +35,6 @@ void cleanUpBFProg(char * BFProg);
 
 bool runBF(byte * BFMem, const char * BFProg);
 
-static void i_nestCrawl(char * BFProg, char ** proggers, char start, char stop); //because recursivity is objectively the best thing to ever happen
+static void i_nestCrawl(const char * BFProg, const char ** proggers, char start, char stop); //because recursivity is objectively the best thing to ever happen
 
 #endif // BRAINFUCK

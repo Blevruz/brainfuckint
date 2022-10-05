@@ -28,7 +28,7 @@ memTo0(byte* BFMem)
         //printf("%i ",i);
     }
 
-    printf("\n");
+    //printf("\n");
     return;
 }
 
@@ -76,7 +76,7 @@ cleanUpBFProg(char * BFProg)
 bool
 runBF(byte * BFMem, const char * BFProg)
 {
-    char * proggers = BFProg;
+    const char * proggers = BFProg;
     byte * mPtr = BFMem;
     long unsigned int r = 0;
     while (*proggers!='\0')
@@ -148,7 +148,7 @@ runBF(byte * BFMem, const char * BFProg)
     }
 }
 
-static void i_nestCrawl(char * BFProg, char ** proggers, char start, char stop)
+static void i_nestCrawl(const char * BFProg,const char ** proggers, char start, char stop)
 {
     if (debug) printf("Nesting on char %i, being %c ...\n", *proggers-BFProg, **proggers);
     while (**proggers != stop)
